@@ -1,0 +1,20 @@
+newmtl Handle1Mtl
+Material Color
+Ka 0.0118813 0.215764 0
+Kd 0.0118813 0.215764 0
+Ks 0.00377407 0.0685369 0 
+
+d 1
+
+Ns 255
+
+newmtl Graypart1Mtl
+Material Color
+Ka 0.14198 0.160444 0.133209
+Kd 0.14198 0.160444 0.133209
+Ks 0.0450996 0.0509644 0.0423133 
+
+d 1
+
+Ns 255
+

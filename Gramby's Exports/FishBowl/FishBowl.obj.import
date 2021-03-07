@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/FishBowl.obj-da1309d495884a9eae4d1c74f1218eff.mesh"
+
+[deps]
+
+files=[ "res://.import/FishBowl.obj-da1309d495884a9eae4d1c74f1218eff.mesh" ]
+
+source_file="res://Gramby's Exports/FishBowl/FishBowl.obj"
+dest_files=[ "res://.import/FishBowl.obj-da1309d495884a9eae4d1c74f1218eff.mesh", "res://.import/FishBowl.obj-da1309d495884a9eae4d1c74f1218eff.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

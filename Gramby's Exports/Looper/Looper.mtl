@@ -1,0 +1,10 @@
+newmtl Circle1Mtl
+Material Color
+Ka 1 0.442323 0
+Kd 1 0.442323 0
+Ks 0.403922 0.178664 0 
+
+d 1
+
+Ns 0
+

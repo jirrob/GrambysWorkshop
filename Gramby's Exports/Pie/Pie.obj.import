@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pie.obj-c0187f1e0fa65b534bcc44ab40dedc5f.mesh"
+
+[deps]
+
+files=[ "res://.import/Pie.obj-c0187f1e0fa65b534bcc44ab40dedc5f.mesh" ]
+
+source_file="res://Gramby's Exports/Pie/Pie.obj"
+dest_files=[ "res://.import/Pie.obj-c0187f1e0fa65b534bcc44ab40dedc5f.mesh", "res://.import/Pie.obj-c0187f1e0fa65b534bcc44ab40dedc5f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

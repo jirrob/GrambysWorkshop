@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Looper.obj-74f917770ce2dc5fae823432da4ae95e.mesh"
+
+[deps]
+
+files=[ "res://.import/Looper.obj-74f917770ce2dc5fae823432da4ae95e.mesh" ]
+
+source_file="res://Gramby's Exports/Looper/Looper.obj"
+dest_files=[ "res://.import/Looper.obj-74f917770ce2dc5fae823432da4ae95e.mesh", "res://.import/Looper.obj-74f917770ce2dc5fae823432da4ae95e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

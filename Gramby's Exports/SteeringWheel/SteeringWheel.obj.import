@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SteeringWheel.obj-e710c119a4f53b220ff5d33cb4ad78db.mesh"
+
+[deps]
+
+files=[ "res://.import/SteeringWheel.obj-e710c119a4f53b220ff5d33cb4ad78db.mesh" ]
+
+source_file="res://Gramby's Exports/SteeringWheel/SteeringWheel.obj"
+dest_files=[ "res://.import/SteeringWheel.obj-e710c119a4f53b220ff5d33cb4ad78db.mesh", "res://.import/SteeringWheel.obj-e710c119a4f53b220ff5d33cb4ad78db.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

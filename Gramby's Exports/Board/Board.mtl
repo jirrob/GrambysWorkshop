@@ -1,0 +1,14 @@
+newmtl Board1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.145098 0.145098 0.145098 
+
+d 1
+
+Ns 0
+
+map_Ka Board1Tex.png
+map_Kd Board1Tex.png
+map_d Board1Tex.png
+

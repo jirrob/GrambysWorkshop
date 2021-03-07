@@ -1,0 +1,14 @@
+newmtl Cinderblock1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0745098 0.0745098 0.0745098 
+
+d 1
+
+Ns 0
+
+map_Ka Cinderblock1Tex.png
+map_Kd Cinderblock1Tex.png
+map_d Cinderblock1Tex.png
+

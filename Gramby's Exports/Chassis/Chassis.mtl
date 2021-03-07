@@ -1,0 +1,20 @@
+newmtl Gas1Mtl
+Material Color
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0 
+
+d 1
+
+Ns 0
+
+newmtl Chassis1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.118678 0.117082 0.121905 
+
+d 1
+
+Ns 255
+

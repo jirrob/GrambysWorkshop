@@ -1,0 +1,14 @@
+newmtl Gramby1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0431373 0.0431373 0.0431373 
+
+d 1
+
+Ns 0
+
+map_Ka Gramby1Tex.png
+map_Kd Gramby1Tex.png
+map_d Gramby1Tex.png
+

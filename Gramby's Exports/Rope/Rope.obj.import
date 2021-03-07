@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Rope.obj-d9617423fd71fe96ecfc761d16b078ae.mesh"
+
+[deps]
+
+files=[ "res://.import/Rope.obj-d9617423fd71fe96ecfc761d16b078ae.mesh" ]
+
+source_file="res://Gramby's Exports/Rope/Rope.obj"
+dest_files=[ "res://.import/Rope.obj-d9617423fd71fe96ecfc761d16b078ae.mesh", "res://.import/Rope.obj-d9617423fd71fe96ecfc761d16b078ae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

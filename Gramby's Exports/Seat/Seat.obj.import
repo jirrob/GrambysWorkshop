@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Seat.obj-3a3b2ebe0240830896363a4ad4a698db.mesh"
+
+[deps]
+
+files=[ "res://.import/Seat.obj-3a3b2ebe0240830896363a4ad4a698db.mesh" ]
+
+source_file="res://Gramby's Exports/Seat/Seat.obj"
+dest_files=[ "res://.import/Seat.obj-3a3b2ebe0240830896363a4ad4a698db.mesh", "res://.import/Seat.obj-3a3b2ebe0240830896363a4ad4a698db.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

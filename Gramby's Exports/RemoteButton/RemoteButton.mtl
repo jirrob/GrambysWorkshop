@@ -1,0 +1,34 @@
+newmtl Button1Mtl
+Material Color
+Ka 0.353741 0.353741 0.363604
+Kd 0.353741 0.353741 0.363604
+Ks 0.142884 0.142884 0.146867 
+
+d 1
+
+Ns 0
+
+newmtl Handle1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1Tex.png
+map_Kd Handle1Tex.png
+map_d Handle1Tex.png
+
+newmtl Output1Mtl
+Material Color
+Ka 1 0.0151752 0.0151752
+Kd 1 0.0151752 0.0151752
+Ks 0.0627451 0.000952172 0.000952172 
+
+d 1
+
+Ns 0
+

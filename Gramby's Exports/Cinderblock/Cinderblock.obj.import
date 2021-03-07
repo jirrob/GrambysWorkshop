@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cinderblock.obj-cfcd10d4869d7e0e06ad9b77c029a867.mesh"
+
+[deps]
+
+files=[ "res://.import/Cinderblock.obj-cfcd10d4869d7e0e06ad9b77c029a867.mesh" ]
+
+source_file="res://Gramby's Exports/Cinderblock/Cinderblock.obj"
+dest_files=[ "res://.import/Cinderblock.obj-cfcd10d4869d7e0e06ad9b77c029a867.mesh", "res://.import/Cinderblock.obj-cfcd10d4869d7e0e06ad9b77c029a867.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

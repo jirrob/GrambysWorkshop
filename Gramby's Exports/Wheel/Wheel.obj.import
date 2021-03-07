@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wheel.obj-4289a5e8622b02bffe7e5b34e441cceb.mesh"
+
+[deps]
+
+files=[ "res://.import/Wheel.obj-4289a5e8622b02bffe7e5b34e441cceb.mesh" ]
+
+source_file="res://Gramby's Exports/Wheel/Wheel.obj"
+dest_files=[ "res://.import/Wheel.obj-4289a5e8622b02bffe7e5b34e441cceb.mesh", "res://.import/Wheel.obj-4289a5e8622b02bffe7e5b34e441cceb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

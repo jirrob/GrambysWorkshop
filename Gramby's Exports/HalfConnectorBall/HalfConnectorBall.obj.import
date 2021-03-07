@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/HalfConnectorBall.obj-31fef49387181262c8a4661e603f269a.mesh"
+
+[deps]
+
+files=[ "res://.import/HalfConnectorBall.obj-31fef49387181262c8a4661e603f269a.mesh" ]
+
+source_file="res://Gramby's Exports/HalfConnectorBall/HalfConnectorBall.obj"
+dest_files=[ "res://.import/HalfConnectorBall.obj-31fef49387181262c8a4661e603f269a.mesh", "res://.import/HalfConnectorBall.obj-31fef49387181262c8a4661e603f269a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Gramby.obj-4b6cbd28d781d165da67906d53e61bb2.mesh"
+
+[deps]
+
+files=[ "res://.import/Gramby.obj-4b6cbd28d781d165da67906d53e61bb2.mesh" ]
+
+source_file="res://Gramby's Exports/Gramby/Gramby.obj"
+dest_files=[ "res://.import/Gramby.obj-4b6cbd28d781d165da67906d53e61bb2.mesh", "res://.import/Gramby.obj-4b6cbd28d781d165da67906d53e61bb2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,24 @@
+newmtl Bowlingball2Mtl
+Material Color
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0 
+
+d 1
+
+Ns 0
+
+map_Ka Bowlingball2Tex.png
+map_Kd Bowlingball2Tex.png
+map_d Bowlingball2Tex.png
+
+newmtl Bowlingball1Mtl
+Material Color
+Ka 0.0302565 0.0342302 0.0511221
+Kd 0.0302565 0.0342302 0.0511221
+Ks 0.0176793 0.0200012 0.0298713 
+
+d 1
+
+Ns 0
+

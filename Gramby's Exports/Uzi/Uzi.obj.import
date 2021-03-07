@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Uzi.obj-f7c8fd1bab4861751a3a277391205176.mesh"
+
+[deps]
+
+files=[ "res://.import/Uzi.obj-f7c8fd1bab4861751a3a277391205176.mesh" ]
+
+source_file="res://Gramby's Exports/Uzi/Uzi.obj"
+dest_files=[ "res://.import/Uzi.obj-f7c8fd1bab4861751a3a277391205176.mesh", "res://.import/Uzi.obj-f7c8fd1bab4861751a3a277391205176.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

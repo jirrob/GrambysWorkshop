@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/MountedGun.obj-e81b6cbc649c979778f9d3779e27ce41.mesh"
+
+[deps]
+
+files=[ "res://.import/MountedGun.obj-e81b6cbc649c979778f9d3779e27ce41.mesh" ]
+
+source_file="res://Gramby's Exports/MountedGun/MountedGun.obj"
+dest_files=[ "res://.import/MountedGun.obj-e81b6cbc649c979778f9d3779e27ce41.mesh", "res://.import/MountedGun.obj-e81b6cbc649c979778f9d3779e27ce41.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

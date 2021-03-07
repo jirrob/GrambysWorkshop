@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SteeringGyro.obj-824b2f98cd568a3fa22b24cfaee4dad5.mesh"
+
+[deps]
+
+files=[ "res://.import/SteeringGyro.obj-824b2f98cd568a3fa22b24cfaee4dad5.mesh" ]
+
+source_file="res://Gramby's Exports/SteeringGyro/SteeringGyro.obj"
+dest_files=[ "res://.import/SteeringGyro.obj-824b2f98cd568a3fa22b24cfaee4dad5.mesh", "res://.import/SteeringGyro.obj-824b2f98cd568a3fa22b24cfaee4dad5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

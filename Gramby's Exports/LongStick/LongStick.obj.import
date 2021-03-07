@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/LongStick.obj-c9a1da453546c2f441ce90b083651c00.mesh"
+
+[deps]
+
+files=[ "res://.import/LongStick.obj-c9a1da453546c2f441ce90b083651c00.mesh" ]
+
+source_file="res://Gramby's Exports/LongStick/LongStick.obj"
+dest_files=[ "res://.import/LongStick.obj-c9a1da453546c2f441ce90b083651c00.mesh", "res://.import/LongStick.obj-c9a1da453546c2f441ce90b083651c00.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Lock.obj-88a31aa4a45b985bfb60edc98af0f021.mesh"
+
+[deps]
+
+files=[ "res://.import/Lock.obj-88a31aa4a45b985bfb60edc98af0f021.mesh" ]
+
+source_file="res://Gramby's Exports/Lock/Lock.obj"
+dest_files=[ "res://.import/Lock.obj-88a31aa4a45b985bfb60edc98af0f021.mesh", "res://.import/Lock.obj-88a31aa4a45b985bfb60edc98af0f021.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

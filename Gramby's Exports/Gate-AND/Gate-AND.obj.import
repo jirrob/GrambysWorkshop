@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Gate-AND.obj-2433aa321fa81fe456a6f250da730efd.mesh"
+
+[deps]
+
+files=[ "res://.import/Gate-AND.obj-2433aa321fa81fe456a6f250da730efd.mesh" ]
+
+source_file="res://Gramby's Exports/Gate-AND/Gate-AND.obj"
+dest_files=[ "res://.import/Gate-AND.obj-2433aa321fa81fe456a6f250da730efd.mesh", "res://.import/Gate-AND.obj-2433aa321fa81fe456a6f250da730efd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

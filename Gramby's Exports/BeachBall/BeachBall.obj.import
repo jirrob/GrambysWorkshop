@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BeachBall.obj-01bce7b7f5a18d9ce9fc67b0e62a67ad.mesh"
+
+[deps]
+
+files=[ "res://.import/BeachBall.obj-01bce7b7f5a18d9ce9fc67b0e62a67ad.mesh" ]
+
+source_file="res://Gramby's Exports/BeachBall/BeachBall.obj"
+dest_files=[ "res://.import/BeachBall.obj-01bce7b7f5a18d9ce9fc67b0e62a67ad.mesh", "res://.import/BeachBall.obj-01bce7b7f5a18d9ce9fc67b0e62a67ad.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/DoorA.obj-1ec08ac9e00a5b8eaf80e6ba81abaf15.mesh"
+
+[deps]
+
+files=[ "res://.import/DoorA.obj-1ec08ac9e00a5b8eaf80e6ba81abaf15.mesh" ]
+
+source_file="res://Gramby's Exports/DoorA/DoorA.obj"
+dest_files=[ "res://.import/DoorA.obj-1ec08ac9e00a5b8eaf80e6ba81abaf15.mesh", "res://.import/DoorA.obj-1ec08ac9e00a5b8eaf80e6ba81abaf15.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

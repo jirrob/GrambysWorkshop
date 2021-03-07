@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Trowel.obj-d8b43c4b6011a53986503da360d13560.mesh"
+
+[deps]
+
+files=[ "res://.import/Trowel.obj-d8b43c4b6011a53986503da360d13560.mesh" ]
+
+source_file="res://Gramby's Exports/Trowel/Trowel.obj"
+dest_files=[ "res://.import/Trowel.obj-d8b43c4b6011a53986503da360d13560.mesh", "res://.import/Trowel.obj-d8b43c4b6011a53986503da360d13560.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

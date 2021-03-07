@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BrakeLight.obj-6c08bcf933c5c530d09f99df00067f41.mesh"
+
+[deps]
+
+files=[ "res://.import/BrakeLight.obj-6c08bcf933c5c530d09f99df00067f41.mesh" ]
+
+source_file="res://Gramby's Exports/BrakeLight/BrakeLight.obj"
+dest_files=[ "res://.import/BrakeLight.obj-6c08bcf933c5c530d09f99df00067f41.mesh", "res://.import/BrakeLight.obj-6c08bcf933c5c530d09f99df00067f41.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

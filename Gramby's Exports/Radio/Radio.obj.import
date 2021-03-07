@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Radio.obj-fe49fde5d0e851bd842f34482a966ace.mesh"
+
+[deps]
+
+files=[ "res://.import/Radio.obj-fe49fde5d0e851bd842f34482a966ace.mesh" ]
+
+source_file="res://Gramby's Exports/Radio/Radio.obj"
+dest_files=[ "res://.import/Radio.obj-fe49fde5d0e851bd842f34482a966ace.mesh", "res://.import/Radio.obj-fe49fde5d0e851bd842f34482a966ace.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

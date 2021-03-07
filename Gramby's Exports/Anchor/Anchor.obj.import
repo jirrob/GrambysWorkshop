@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Anchor.obj-2e03850a7fbe37e1ead73f3cdc20db83.mesh"
+
+[deps]
+
+files=[ "res://.import/Anchor.obj-2e03850a7fbe37e1ead73f3cdc20db83.mesh" ]
+
+source_file="res://Gramby's Exports/Anchor/Anchor.obj"
+dest_files=[ "res://.import/Anchor.obj-2e03850a7fbe37e1ead73f3cdc20db83.mesh", "res://.import/Anchor.obj-2e03850a7fbe37e1ead73f3cdc20db83.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

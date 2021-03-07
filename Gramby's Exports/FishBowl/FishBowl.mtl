@@ -1,0 +1,24 @@
+newmtl Fish1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Fish1Tex.png
+map_Kd Fish1Tex.png
+map_d Fish1Tex.png
+
+newmtl Fishbowl1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.341382 0.336791 0.350665 
+
+d 0.701961
+
+Ns 0
+

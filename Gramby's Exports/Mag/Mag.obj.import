@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mag.obj-8c1b51ee7e31c773e9536af9eb3e08be.mesh"
+
+[deps]
+
+files=[ "res://.import/Mag.obj-8c1b51ee7e31c773e9536af9eb3e08be.mesh" ]
+
+source_file="res://Gramby's Exports/Mag/Mag.obj"
+dest_files=[ "res://.import/Mag.obj-8c1b51ee7e31c773e9536af9eb3e08be.mesh", "res://.import/Mag.obj-8c1b51ee7e31c773e9536af9eb3e08be.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

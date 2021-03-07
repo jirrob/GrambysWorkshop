@@ -1,0 +1,14 @@
+newmtl Canister1Mtl
+Material Color
+Ka 1 0.21952 0.21952
+Kd 1 0.21952 0.21952
+Ks 0.0627451 0.0137738 0.0137738 
+
+d 1
+
+Ns 0
+
+map_Ka Canister1Tex.png
+map_Kd Canister1Tex.png
+map_d Canister1Tex.png
+

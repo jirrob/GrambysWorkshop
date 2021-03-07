@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/InputSensor.obj-2935fa020a27e3e30f29383bbb5f9c1d.mesh"
+
+[deps]
+
+files=[ "res://.import/InputSensor.obj-2935fa020a27e3e30f29383bbb5f9c1d.mesh" ]
+
+source_file="res://Gramby's Exports/InputSensor/InputSensor.obj"
+dest_files=[ "res://.import/InputSensor.obj-2935fa020a27e3e30f29383bbb5f9c1d.mesh", "res://.import/InputSensor.obj-2935fa020a27e3e30f29383bbb5f9c1d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

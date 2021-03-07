@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/VelocitySensor.obj-e44512439bd9afd9b60c348ab3989b62.mesh"
+
+[deps]
+
+files=[ "res://.import/VelocitySensor.obj-e44512439bd9afd9b60c348ab3989b62.mesh" ]
+
+source_file="res://Gramby's Exports/VelocitySensor/VelocitySensor.obj"
+dest_files=[ "res://.import/VelocitySensor.obj-e44512439bd9afd9b60c348ab3989b62.mesh", "res://.import/VelocitySensor.obj-e44512439bd9afd9b60c348ab3989b62.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

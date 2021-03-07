@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wad.obj-d048d5f53906fd953e9d71521064c11c.mesh"
+
+[deps]
+
+files=[ "res://.import/wad.obj-d048d5f53906fd953e9d71521064c11c.mesh" ]
+
+source_file="res://Gramby's Exports/wad/wad.obj"
+dest_files=[ "res://.import/wad.obj-d048d5f53906fd953e9d71521064c11c.mesh", "res://.import/wad.obj-d048d5f53906fd953e9d71521064c11c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

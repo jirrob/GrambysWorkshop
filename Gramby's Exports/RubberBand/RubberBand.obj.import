@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/RubberBand.obj-06a4aecfc628a052f33cd23d069ee182.mesh"
+
+[deps]
+
+files=[ "res://.import/RubberBand.obj-06a4aecfc628a052f33cd23d069ee182.mesh" ]
+
+source_file="res://Gramby's Exports/RubberBand/RubberBand.obj"
+dest_files=[ "res://.import/RubberBand.obj-06a4aecfc628a052f33cd23d069ee182.mesh", "res://.import/RubberBand.obj-06a4aecfc628a052f33cd23d069ee182.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

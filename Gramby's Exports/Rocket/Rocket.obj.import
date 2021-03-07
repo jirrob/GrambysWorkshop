@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Rocket.obj-84c3864bb56aa5c7020e6a83a92bfc5e.mesh"
+
+[deps]
+
+files=[ "res://.import/Rocket.obj-84c3864bb56aa5c7020e6a83a92bfc5e.mesh" ]
+
+source_file="res://Gramby's Exports/Rocket/Rocket.obj"
+dest_files=[ "res://.import/Rocket.obj-84c3864bb56aa5c7020e6a83a92bfc5e.mesh", "res://.import/Rocket.obj-84c3864bb56aa5c7020e6a83a92bfc5e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

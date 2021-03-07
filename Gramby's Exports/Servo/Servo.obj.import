@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Servo.obj-498dee1369a2db6fbdbea9947bf5f24a.mesh"
+
+[deps]
+
+files=[ "res://.import/Servo.obj-498dee1369a2db6fbdbea9947bf5f24a.mesh" ]
+
+source_file="res://Gramby's Exports/Servo/Servo.obj"
+dest_files=[ "res://.import/Servo.obj-498dee1369a2db6fbdbea9947bf5f24a.mesh", "res://.import/Servo.obj-498dee1369a2db6fbdbea9947bf5f24a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

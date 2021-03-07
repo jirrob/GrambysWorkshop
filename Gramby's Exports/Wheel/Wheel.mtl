@@ -1,0 +1,14 @@
+newmtl Wheel1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Wheel1Tex.png
+map_Kd Wheel1Tex.png
+map_d Wheel1Tex.png
+

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Tooth.obj-a66562384b0ae88136b69286c9382f0b.mesh"
+
+[deps]
+
+files=[ "res://.import/Tooth.obj-a66562384b0ae88136b69286c9382f0b.mesh" ]
+
+source_file="res://Gramby's Exports/Tooth/Tooth.obj"
+dest_files=[ "res://.import/Tooth.obj-a66562384b0ae88136b69286c9382f0b.mesh", "res://.import/Tooth.obj-a66562384b0ae88136b69286c9382f0b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

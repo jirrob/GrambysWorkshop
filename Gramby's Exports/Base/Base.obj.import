@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Base.obj-82a439a82870116e949b2406c1d2ade5.mesh"
+
+[deps]
+
+files=[ "res://.import/Base.obj-82a439a82870116e949b2406c1d2ade5.mesh" ]
+
+source_file="res://Gramby's Exports/Base/Base.obj"
+dest_files=[ "res://.import/Base.obj-82a439a82870116e949b2406c1d2ade5.mesh", "res://.import/Base.obj-82a439a82870116e949b2406c1d2ade5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

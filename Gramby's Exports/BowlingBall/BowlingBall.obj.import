@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BowlingBall.obj-c3b3023c28135429223089bdf337aef6.mesh"
+
+[deps]
+
+files=[ "res://.import/BowlingBall.obj-c3b3023c28135429223089bdf337aef6.mesh" ]
+
+source_file="res://Gramby's Exports/BowlingBall/BowlingBall.obj"
+dest_files=[ "res://.import/BowlingBall.obj-c3b3023c28135429223089bdf337aef6.mesh", "res://.import/BowlingBall.obj-c3b3023c28135429223089bdf337aef6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

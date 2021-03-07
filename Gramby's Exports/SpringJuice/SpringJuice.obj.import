@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SpringJuice.obj-7359c8d82748f615c5c215745dc53d62.mesh"
+
+[deps]
+
+files=[ "res://.import/SpringJuice.obj-7359c8d82748f615c5c215745dc53d62.mesh" ]
+
+source_file="res://Gramby's Exports/SpringJuice/SpringJuice.obj"
+dest_files=[ "res://.import/SpringJuice.obj-7359c8d82748f615c5c215745dc53d62.mesh", "res://.import/SpringJuice.obj-7359c8d82748f615c5c215745dc53d62.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

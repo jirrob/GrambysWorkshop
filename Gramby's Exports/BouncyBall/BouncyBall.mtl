@@ -1,0 +1,24 @@
+newmtl Bouncyball1Mtl
+Material Color
+Ka 1 0 0
+Kd 1 0 0
+Ks 0.403922 0 0 
+
+d 1
+
+Ns 0
+
+newmtl Bouncyball2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.403922 0.403922 0.403922 
+
+d 1
+
+Ns 0
+
+map_Ka Bouncyball2Tex.png
+map_Kd Bouncyball2Tex.png
+map_d Bouncyball2Tex.png
+

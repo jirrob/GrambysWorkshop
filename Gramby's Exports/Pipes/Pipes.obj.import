@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pipes.obj-7bbda910d42c6d962b61f3e6a7f31f9e.mesh"
+
+[deps]
+
+files=[ "res://.import/Pipes.obj-7bbda910d42c6d962b61f3e6a7f31f9e.mesh" ]
+
+source_file="res://Gramby's Exports/Pipes/Pipes.obj"
+dest_files=[ "res://.import/Pipes.obj-7bbda910d42c6d962b61f3e6a7f31f9e.mesh", "res://.import/Pipes.obj-7bbda910d42c6d962b61f3e6a7f31f9e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

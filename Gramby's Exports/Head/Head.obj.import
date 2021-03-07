@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Head.obj-f764313f41aa833a18f3909f73d641a2.mesh"
+
+[deps]
+
+files=[ "res://.import/Head.obj-f764313f41aa833a18f3909f73d641a2.mesh" ]
+
+source_file="res://Gramby's Exports/Head/Head.obj"
+dest_files=[ "res://.import/Head.obj-f764313f41aa833a18f3909f73d641a2.mesh", "res://.import/Head.obj-f764313f41aa833a18f3909f73d641a2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

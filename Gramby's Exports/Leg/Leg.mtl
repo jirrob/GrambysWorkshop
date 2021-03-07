@@ -1,0 +1,14 @@
+newmtl Leg1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Leg1Tex.png
+map_Kd Leg1Tex.png
+map_d Leg1Tex.png
+

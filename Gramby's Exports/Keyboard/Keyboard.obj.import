@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Keyboard.obj-726d251f4350f74ca7e58699beca1083.mesh"
+
+[deps]
+
+files=[ "res://.import/Keyboard.obj-726d251f4350f74ca7e58699beca1083.mesh" ]
+
+source_file="res://Gramby's Exports/Keyboard/Keyboard.obj"
+dest_files=[ "res://.import/Keyboard.obj-726d251f4350f74ca7e58699beca1083.mesh", "res://.import/Keyboard.obj-726d251f4350f74ca7e58699beca1083.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

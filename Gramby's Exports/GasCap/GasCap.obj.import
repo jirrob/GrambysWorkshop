@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/GasCap.obj-ca27f94b3a5c2274bd8e210454f8595f.mesh"
+
+[deps]
+
+files=[ "res://.import/GasCap.obj-ca27f94b3a5c2274bd8e210454f8595f.mesh" ]
+
+source_file="res://Gramby's Exports/GasCap/GasCap.obj"
+dest_files=[ "res://.import/GasCap.obj-ca27f94b3a5c2274bd8e210454f8595f.mesh", "res://.import/GasCap.obj-ca27f94b3a5c2274bd8e210454f8595f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

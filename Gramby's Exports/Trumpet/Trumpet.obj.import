@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Trumpet.obj-295dc1bc752212e762aa7674af6e680a.mesh"
+
+[deps]
+
+files=[ "res://.import/Trumpet.obj-295dc1bc752212e762aa7674af6e680a.mesh" ]
+
+source_file="res://Gramby's Exports/Trumpet/Trumpet.obj"
+dest_files=[ "res://.import/Trumpet.obj-295dc1bc752212e762aa7674af6e680a.mesh", "res://.import/Trumpet.obj-295dc1bc752212e762aa7674af6e680a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

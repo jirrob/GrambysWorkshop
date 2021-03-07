@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Bearing.obj-3174fd2ec7d5d429c0fead54a51adc6c.mesh"
+
+[deps]
+
+files=[ "res://.import/Bearing.obj-3174fd2ec7d5d429c0fead54a51adc6c.mesh" ]
+
+source_file="res://Gramby's Exports/Bearing/Bearing.obj"
+dest_files=[ "res://.import/Bearing.obj-3174fd2ec7d5d429c0fead54a51adc6c.mesh", "res://.import/Bearing.obj-3174fd2ec7d5d429c0fead54a51adc6c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

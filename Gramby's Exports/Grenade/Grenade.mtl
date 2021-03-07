@@ -1,0 +1,28 @@
+newmtl Handle1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1Tex.png
+map_Kd Handle1Tex.png
+map_d Handle1Tex.png
+
+newmtl Pin1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Pin1Tex.png
+map_Kd Pin1Tex.png
+map_d Pin1Tex.png
+

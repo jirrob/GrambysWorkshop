@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BallSocket.obj-8fd512ca72a479389dae25426a6e20ef.mesh"
+
+[deps]
+
+files=[ "res://.import/BallSocket.obj-8fd512ca72a479389dae25426a6e20ef.mesh" ]
+
+source_file="res://Gramby's Exports/BallSocket/BallSocket.obj"
+dest_files=[ "res://.import/BallSocket.obj-8fd512ca72a479389dae25426a6e20ef.mesh", "res://.import/BallSocket.obj-8fd512ca72a479389dae25426a6e20ef.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

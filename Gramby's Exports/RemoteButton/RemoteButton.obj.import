@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/RemoteButton.obj-ea7e76261d9e8646d5af742b80fa8729.mesh"
+
+[deps]
+
+files=[ "res://.import/RemoteButton.obj-ea7e76261d9e8646d5af742b80fa8729.mesh" ]
+
+source_file="res://Gramby's Exports/RemoteButton/RemoteButton.obj"
+dest_files=[ "res://.import/RemoteButton.obj-ea7e76261d9e8646d5af742b80fa8729.mesh", "res://.import/RemoteButton.obj-ea7e76261d9e8646d5af742b80fa8729.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

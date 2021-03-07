@@ -1,0 +1,24 @@
+newmtl Handle1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1Tex.png
+map_Kd Handle1Tex.png
+map_d Handle1Tex.png
+
+newmtl Lock1Mtl
+Material Color
+Ka 0.442323 0.436813 0.447871
+Kd 0.442323 0.436813 0.447871
+Ks 0.178664 0.176438 0.180905 
+
+d 1
+
+Ns 0
+

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/EntitySensor.obj-48fab93f7fea34e8bf8aa9b294d9a435.mesh"
+
+[deps]
+
+files=[ "res://.import/EntitySensor.obj-48fab93f7fea34e8bf8aa9b294d9a435.mesh" ]
+
+source_file="res://Gramby's Exports/EntitySensor/EntitySensor.obj"
+dest_files=[ "res://.import/EntitySensor.obj-48fab93f7fea34e8bf8aa9b294d9a435.mesh", "res://.import/EntitySensor.obj-48fab93f7fea34e8bf8aa9b294d9a435.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

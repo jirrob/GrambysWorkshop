@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/RiotShield.obj-1209de040aebbd4746aa91b3c1b95212.mesh"
+
+[deps]
+
+files=[ "res://.import/RiotShield.obj-1209de040aebbd4746aa91b3c1b95212.mesh" ]
+
+source_file="res://Gramby's Exports/RiotShield/RiotShield.obj"
+dest_files=[ "res://.import/RiotShield.obj-1209de040aebbd4746aa91b3c1b95212.mesh", "res://.import/RiotShield.obj-1209de040aebbd4746aa91b3c1b95212.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

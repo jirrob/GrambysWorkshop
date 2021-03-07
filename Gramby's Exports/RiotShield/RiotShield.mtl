@@ -1,0 +1,28 @@
+newmtl Window1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 0.352941
+
+Ns 0
+
+map_Ka Window1Tex.png
+map_Kd Window1Tex.png
+map_d Window1Tex.png
+
+newmtl Handle1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1Tex.png
+map_Kd Handle1Tex.png
+map_d Handle1Tex.png
+

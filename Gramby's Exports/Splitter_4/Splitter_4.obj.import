@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Splitter_4.obj-54d508ed31b91f24a7b2029398169099.mesh"
+
+[deps]
+
+files=[ "res://.import/Splitter_4.obj-54d508ed31b91f24a7b2029398169099.mesh" ]
+
+source_file="res://Gramby's Exports/Splitter_4/Splitter_4.obj"
+dest_files=[ "res://.import/Splitter_4.obj-54d508ed31b91f24a7b2029398169099.mesh", "res://.import/Splitter_4.obj-54d508ed31b91f24a7b2029398169099.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
