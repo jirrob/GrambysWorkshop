@@ -5,16 +5,21 @@ public class Attachment : Spatial
 {
     public enum AttachmentType
     {
-        Any,
-        Preferred,
-        Specific,
+        Cup,
+        Ball,
     }
 
     [Export]
-    public AttachmentType Type;
+    public AttachmentType Type = AttachmentType.Cup;
 
-    public Attachment(Transform transform) : base()
+    [Export]
+    public string OnlyBall;
+
+    [Export]
+    public NodePath AttachedPath;
+
+    public GrambyObject Attached
     {
-        Transform = transform;
+        get => AttachedPath == null ? null : GetNode<GrambyObject>(AttachedPath);
     }
 }

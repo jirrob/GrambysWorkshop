@@ -7,25 +7,30 @@ public class Editor : Node
     public override void _Ready()
     {
         OS.WindowBorderless = false;
-
-    }
-
-    public void _on_InsertObject_pressed()
-    {
-        GetNode<WindowDialog>("UI/InsertDialog").Popup_();
     }
 
     public override void _Input(InputEvent @event)
     {
-        if (@event is InputEventKey e)
+        switch (@event)
         {
-            if ((KeyList)e.Scancode == KeyList.Z)
-            {
-                // GD.Print(SerializeRTG.SerializeToString(GetNode<TestObject>("TestObject")));
-                var file = new RTGBFile("Test file", "Taylor", "This is a test file!", GetNode<GrambyObject>("TestObject"));
-                var json = JsonConvert.SerializeObject(file, new JsonConverter[] { new RTGBFile.GrambyObjectConverter(), new RTGBFile.Vector3Converter() });
-                GD.Print(json);
-            }
+            case InputEventKey e:
+                switch ((KeyList)e.Scancode)
+                {
+                    case KeyList.Z:
+                        GetNode<BuildTree>("UI/MainArea/RightPanel/Build/Control/Tree").ReflectGrambyObject(GetNode<Part>("Part"));
+                        break;
+                    case KeyList.X:
+                        var serialized = JsonConvert.SerializeObject(
+                                new RTGFile(GetNode<Part>("Part")),
+                                new JsonConverter[] { new RTGFile.RTGElement.RTGElementConverter() }
+                            );
+                        var utf8bytes = System.Text.Encoding.UTF8.GetBytes(serialized);
+                        var code = System.Convert.ToBase64String(utf8bytes);
+                        GD.Print(serialized);
+                        GD.Print(code);
+                        break;
+                }
+                break;
         }
     }
 }

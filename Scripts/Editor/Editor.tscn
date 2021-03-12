@@ -1,21 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/OrbitTarget/OrbitTarget.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Editor/Editor.cs" type="Script" id=2]
-[ext_resource path="res://Scripts/GrambyObjects/TestObject/TestObject.tscn" type="PackedScene" id=3]
-[ext_resource path="res://UI/Theme.tres" type="Theme" id=4]
-[ext_resource path="res://UI/Header.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Scripts/GrambyObjects/Part/Part.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/UI/UI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://panorama_image.png" type="Texture" id=6]
 
-[sub_resource type="PanoramaSky" id=4]
+[sub_resource type="PanoramaSky" id=1]
 panorama = ExtResource( 6 )
 
-[sub_resource type="Environment" id=3]
+[sub_resource type="Environment" id=2]
 background_mode = 2
-background_sky = SubResource( 4 )
+background_sky = SubResource( 1 )
+background_color = Color( 0.635294, 0.635294, 0.635294, 1 )
 ambient_light_color = Color( 1, 1, 1, 1 )
-ambient_light_energy = 0.35
-ambient_light_sky_contribution = 0.0
 dof_blur_far_distance = 5.0
 dof_blur_far_amount = 0.05
 dof_blur_far_quality = 2
@@ -26,202 +24,23 @@ script = ExtResource( 2 )
 [node name="OrbitTarget" parent="." instance=ExtResource( 1 )]
 Sensitivity = 0.25
 
-[node name="TestObject" parent="." instance=ExtResource( 3 )]
+[node name="Part" parent="." instance=ExtResource( 3 )]
 
-[node name="UI" type="Control" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 17.8899
-margin_top = 32.9049
-margin_right = -14.1101
-margin_bottom = -7.09509
-theme = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="5" parent="Part" index="4"]
+AttachedPath = NodePath("Part")
 
-[node name="LeftPanel" type="Control" parent="UI"]
-anchor_right = 0.15
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Part" parent="Part/5" index="3" instance=ExtResource( 3 )]
 
-[node name="Details" type="PanelContainer" parent="UI/LeftPanel"]
-anchor_top = 0.559
-anchor_right = 1.0
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Control" type="Control" parent="UI/LeftPanel/Details"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 228.2
-margin_bottom = 416.36
-
-[node name="Label" type="Label" parent="UI/LeftPanel/Details/Control"]
-margin_right = 221.2
-margin_bottom = 48.0
-size_flags_vertical = 0
-custom_fonts/font = ExtResource( 5 )
-text = "Details"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BuildNameLabel" type="Label" parent="UI/LeftPanel/Details/Control"]
-anchor_right = 1.0
-margin_top = 49.0
-margin_bottom = 24.0
-size_flags_vertical = 0
-text = "Build Name"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="NotesLabel" type="Label" parent="UI/LeftPanel/Details/Control"]
-anchor_right = 1.0
-margin_top = 181.0
-size_flags_vertical = 0
-text = "Notes"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="AuthorLabel" type="Label" parent="UI/LeftPanel/Details/Control"]
-anchor_right = 1.0
-margin_top = 115.0
-margin_bottom = 24.0
-size_flags_vertical = 0
-text = "Author"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BuildName" type="LineEdit" parent="UI/LeftPanel/Details/Control"]
-anchor_right = 1.0
-anchor_bottom = 0.03
-margin_top = 69.0
-margin_bottom = 34.0
-size_flags_vertical = 0
-text = "Untitled"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Author" type="LineEdit" parent="UI/LeftPanel/Details/Control"]
-anchor_right = 1.0
-anchor_bottom = 0.03
-margin_top = 136.0
-margin_bottom = 34.0
-size_flags_vertical = 0
-text = "Anonymous"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextEdit" type="TextEdit" parent="UI/LeftPanel/Details/Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 204.0
-text = "Created with Gramby's Workshop"
-wrap_enabled = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="RightPanel" type="Control" parent="UI"]
-anchor_left = 0.85
-anchor_right = 1.0
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Build" type="PanelContainer" parent="UI/RightPanel"]
-anchor_right = 1.0
-anchor_bottom = 0.488
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Control" type="Control" parent="UI/RightPanel/Build"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 228.2
-margin_bottom = 461.48
-
-[node name="Label" type="Label" parent="UI/RightPanel/Build/Control"]
-anchor_right = 1.0
-size_flags_vertical = 0
-custom_fonts/font = ExtResource( 5 )
-text = "Build"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Tree" type="Tree" parent="UI/RightPanel/Build/Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 45.0
-select_mode = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Groups" type="PanelContainer" parent="UI/RightPanel"]
-anchor_top = 0.513
-anchor_right = 1.0
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Control" type="Control" parent="UI/RightPanel/Groups"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 228.2
-margin_bottom = 460.52
-
-[node name="Label" type="Label" parent="UI/RightPanel/Groups/Control"]
-anchor_right = 1.0
-size_flags_vertical = 0
-custom_fonts/font = ExtResource( 5 )
-text = "Groups"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="NoGroupsText" type="Label" parent="UI/RightPanel/Groups/Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 55.0
-size_flags_vertical = 0
-text = "No groups."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="UI" parent="." instance=ExtResource( 4 )]
+mouse_filter = 2
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 3 )
-
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_right = 1.0
-margin_bottom = 24.0
-color = Color( 0.25098, 0.243137, 0.282353, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+environment = SubResource( 2 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.649964, -0.425304, -0.629812, 0.600236, 0.795589, 0.0821907, 0.466115, -0.431456, 0.772387, 0, 10.2551, 0 )
-light_energy = 0.48
-shadow_enabled = true
+transform = Transform( 0.719612, 0.511763, 0.469316, -0.683529, 0.403071, 0.608541, 0.122261, -0.758704, 0.63986, 0, 5.52658, 0 )
 
 [node name="DirectionalLight2" type="DirectionalLight" parent="."]
-transform = Transform( -0.249667, 0.513133, 0.821195, -0.346719, 0.744453, -0.570592, -0.904131, -0.427182, -0.00795298, 0, 10.2551, 0 )
-light_energy = 0.1
+transform = Transform( -0.292826, 0.824696, -0.483869, 0.466484, -0.318523, -0.825189, -0.834653, -0.467354, -0.291436, 0, 5.52658, 0 )
+
+[editable path="Part"]

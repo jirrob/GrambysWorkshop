@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+render_mode blend_add, unshaded;
+
+uniform bool selected;
+
+void fragment() {
+	if (selected) {
+		ALBEDO = vec3(0.24, 0.68, 0.79) / 2.0;
+	} else {
+		ALBEDO = vec3(0.0, 0.0, 0.0);
+	}
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/selected = false
