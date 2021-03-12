@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://UI/Theme.tres" type="Theme" id=1]
 [ext_resource path="res://UI/Header.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Scripts/UI/BuildTree.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/UI/UI.cs" type="Script" id=4]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -200,3 +202,27 @@ color = Color( 0.25098, 0.243137, 0.282353, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="File" type="MenuButton" parent="TopBar"]
+anchor_bottom = 1.0
+margin_right = 35.0
+text = "File"
+items = [ "Export to RTG", null, 0, false, false, 0, 0, null, "", false ]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RTGExport" type="WindowDialog" parent="."]
+margin_left = 530.976
+margin_top = 254.797
+margin_right = 1036.98
+margin_bottom = 595.797
+window_title = "RTG Export"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="RTGExport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+readonly = true

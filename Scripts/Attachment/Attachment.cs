@@ -22,4 +22,12 @@ public class Attachment : Spatial
     {
         get => AttachedPath == null ? null : GetNode<GrambyObject>(AttachedPath);
     }
+
+    public override void _Ready()
+    {
+        if (Type == AttachmentType.Ball)
+        {
+            Visible = false;
+        }
+    }
 }
