@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="DefaultPreviewCamera" type="Camera"]
+transform = Transform( 0.707107, -0.40558, 0.579228, 0, 0.819152, 0.573577, -0.707107, -0.40558, 0.579228, 1, 1, 1 )

@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public abstract class GrambyObject : Spatial
 {
+    public static PackedScene[] AllObjectTypes = new PackedScene[] {
+        ResourceLoader.Load<PackedScene>("res://Scripts/GrambyObjects/Part/Part.tscn")
+    };
+
     public Dictionary<string, object> Properties;
 
     private NodePath _defaultAttachment;

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/Theme.tres" type="Theme" id=1]
 [ext_resource path="res://UI/Header.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Scripts/UI/BuildTree.cs" type="Script" id=3]
 [ext_resource path="res://Scripts/UI/UI.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/UI/WrappingGridContainer.cs" type="Script" id=5]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
@@ -115,6 +116,45 @@ anchor_bottom = 1.0
 margin_top = 204.0
 text = "Created with Gramby's Workshop"
 wrap_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Palette" type="PanelContainer" parent="MainArea/LeftPanel"]
+anchor_right = 1.0
+anchor_bottom = 0.545
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="MainArea/LeftPanel/Palette"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 228.2
+margin_bottom = 516.2
+
+[node name="Label" type="Label" parent="MainArea/LeftPanel/Palette/Control"]
+anchor_right = 1.0
+margin_bottom = 41.0
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+text = "Insert"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="MainArea/LeftPanel/Palette/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 40.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WrappingGridContainer" type="GridContainer" parent="MainArea/LeftPanel/Palette/Control/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

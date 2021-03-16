@@ -6,6 +6,7 @@ public class UI : Control
 {
     private WindowDialog RTGExportWindow;
     private TextEdit RTGExportWindowTextEdit;
+    private GridContainer PreviewGridContainer;
 
     private Editor Editor;
 
@@ -14,7 +15,21 @@ public class UI : Control
         ConnectMenuButtons();
         RTGExportWindow = GetNode<WindowDialog>("RTGExport");
         RTGExportWindowTextEdit = GetNode<TextEdit>("RTGExport/TextEdit");
+        PreviewGridContainer = GetNode<GridContainer>("MainArea/LeftPanel/Palette/Control/Control/WrappingGridContainer");
         Editor = GetParent<Editor>();
+        SetupPreviews();
+    }
+
+    private void SetupPreviews()
+    {
+        var objectPreview = ResourceLoader.Load<PackedScene>("res://Scripts/UI/ObjectPreview.tscn");
+
+        foreach (var scene in GrambyObject.AllObjectTypes)
+        {
+            var preview = (ObjectPreview)objectPreview.Instance();
+            preview.WhatToRender = scene;
+            PreviewGridContainer.AddChild(preview);
+        }
     }
 
     private void ConnectMenuButtons()

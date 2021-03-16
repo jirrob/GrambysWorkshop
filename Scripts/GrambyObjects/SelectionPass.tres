@@ -6,9 +6,17 @@ render_mode blend_add, unshaded;
 
 uniform bool selected;
 
+const vec3 SELECTION_COLOR = vec3(0.13, 0.85, 0.96);
+
 void fragment() {
 	if (selected) {
-		ALBEDO = vec3(0.24, 0.68, 0.79) / 2.0;
+		vec2 pixels = VIEWPORT_SIZE * SCREEN_UV;
+		int x = int(pixels.x - pixels.y);
+		if ((x - int(TIME * 120.0)) % 50 > 30) {
+			ALBEDO = SELECTION_COLOR / 5.0;
+		} else {
+			ALBEDO = SELECTION_COLOR / 15.0;
+		}
 	} else {
 		ALBEDO = vec3(0.0, 0.0, 0.0);
 	}

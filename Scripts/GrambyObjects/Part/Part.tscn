@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/GrambyObjects/Part/Part.cs" type="Script" id=1]
 [ext_resource path="res://Gramby's Exports/Part/Part.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://Scripts/Attachment/Attachment.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/GrambyObjects/SelectionPass.tres" type="Material" id=4]
+[ext_resource path="res://Scripts/GrambyObjects/DefaultPreviewCamera.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type spatial;
@@ -16,7 +17,6 @@ void fragment() {
 "
 
 [sub_resource type="ShaderMaterial" id=2]
-render_priority = 1
 next_pass = ExtResource( 4 )
 shader = SubResource( 1 )
 shader_param/color = Color( 0.639216, 0.635294, 0.647059, 1 )
@@ -48,3 +48,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.499644, 0 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.66, -2.44536, 58.336 )
 mesh = ExtResource( 2 )
 material/0 = SubResource( 2 )
+
+[node name="DefaultPreviewCamera" parent="." instance=ExtResource( 5 )]
+visible = false
