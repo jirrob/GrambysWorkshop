@@ -266,3 +266,4 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 readonly = true
+wrap_enabled = true

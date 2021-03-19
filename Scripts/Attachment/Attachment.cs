@@ -15,12 +15,19 @@ public class Attachment : Spatial
     [Export]
     public string OnlyBall;
 
-    [Export]
-    public NodePath AttachedPath;
-
     public GrambyObject Attached
     {
-        get => AttachedPath == null ? null : GetNode<GrambyObject>(AttachedPath);
+        get
+        {
+            foreach (Node child in GetChildren())
+            {
+                if (child is GrambyObject grambyObject)
+                {
+                    return grambyObject;
+                }
+            }
+            return null;
+        }
     }
 
     public override void _Ready()

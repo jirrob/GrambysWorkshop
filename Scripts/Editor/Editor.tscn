@@ -26,9 +26,6 @@ Sensitivity = 0.25
 
 [node name="Part" parent="." instance=ExtResource( 3 )]
 
-[node name="5" parent="Part" index="4"]
-AttachedPath = NodePath("Part")
-
 [node name="Part" parent="Part/5" index="3" instance=ExtResource( 3 )]
 
 [node name="UI" parent="." instance=ExtResource( 4 )]

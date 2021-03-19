@@ -8,6 +8,8 @@ public class Editor : Node
 
     public GrambyObject Root;
 
+    private BuildTree Tree;
+
     private GrambyObject DraggedObject = null;
 
     private Godot.Collections.Array AreaExclusionArray;
@@ -26,7 +28,8 @@ public class Editor : Node
         SpaceState = Camera.GetWorld().DirectSpaceState;
         // TODO temporary
         Root = GetNode<GrambyObject>("Part");
-        GetNode<BuildTree>("UI/MainArea/RightPanel/Build/Control/Tree").ReflectGrambyObject(GetNode<Part>("Part"));
+        Tree = GetNode<BuildTree>("UI/MainArea/RightPanel/Build/Control/Tree");
+        Tree.ReflectGrambyObject(Root);
     }
 
     public override void _Input(InputEvent @event)
@@ -48,12 +51,17 @@ public class Editor : Node
             SetAreaExclusionArray(DraggedObject);
             AddChild(DraggedObject);
             SetDraggedObjectPosition();
+            Tree.ReflectGrambyObject(Root);
         }
         else if (Input.IsActionJustReleased("drag_object"))
         {
-            DisposeDraggedObject();
+            if (DraggedObject != null && DraggedObject.GetParent() == this)
+            {
+                DisposeDraggedObject();
+            }
             DraggedObject = null;
             AreaExclusionArray = null;
+            Tree.ReflectGrambyObject(Root);
         }
     }
 
