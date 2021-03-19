@@ -22,20 +22,25 @@ public abstract class GrambyObject : Spatial
         set
         {
             _defaultAttachment = value;
-            var attachment = GetNodeOrNull<Attachment>(value);
-            if (attachment != null)
-            {
-                // TODO: Might want to add a child spatial and change *its* 
-                //       transform instead of having a GrambyObject change its
-                //       own transform, which might mess some things up.
-                Transform = attachment.Transform.Inverse();
-            }
+            SetTransform();
         }
     }
 
     public override void _Ready()
     {
         DefaultAttachment = DefaultAttachment;
+    }
+
+    public void SetTransform()
+    {
+        var attachment = GetNodeOrNull<Attachment>(DefaultAttachment);
+        if (attachment != null)
+        {
+            // TODO: Might want to add a child spatial and change *its* 
+            //       transform instead of having a GrambyObject change its
+            //       own transform, which might mess some things up.
+            Transform = attachment.Transform.Inverse();
+        }
     }
 
     public string ClassName()

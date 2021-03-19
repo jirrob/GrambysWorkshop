@@ -4,6 +4,8 @@ using System;
 
 public class UI : Control
 {
+    public PackedScene PaletteHover = null;
+
     private WindowDialog RTGExportWindow;
     private TextEdit RTGExportWindowTextEdit;
     private GridContainer PreviewGridContainer;
@@ -28,8 +30,15 @@ public class UI : Control
         {
             var preview = (ObjectPreview)objectPreview.Instance();
             preview.WhatToRender = scene;
+            preview.Connect("mouse_entered", this, nameof(SetPaletteHover), new Godot.Collections.Array { scene });
+            preview.Connect("mouse_exited", this, nameof(SetPaletteHover), new Godot.Collections.Array { null });
             PreviewGridContainer.AddChild(preview);
         }
+    }
+
+    private void SetPaletteHover(PackedScene hover)
+    {
+        PaletteHover = hover;
     }
 
     private void ConnectMenuButtons()
