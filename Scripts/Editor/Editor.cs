@@ -1,12 +1,26 @@
 using Godot;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 
 public class Editor : Node
 {
     public UI UI;
 
     public GrambyObject Root;
+
+    private List<GrambyObject> _selection = null;
+
+    public List<GrambyObject> Selection
+    {
+        get => _selection;
+        set
+        {
+            UpdateSelection(false);
+            _selection = value;
+            UpdateSelection(true);
+        }
+    }
 
     private BuildTree Tree;
 
@@ -20,6 +34,9 @@ public class Editor : Node
 
     private PhysicsDirectSpaceState SpaceState;
 
+    /// Used to determine if a selection can/should be made after letting go of the mouse
+    private bool EligibleForSelection;
+
     public override void _Ready()
     {
         OS.WindowBorderless = false;
@@ -32,6 +49,9 @@ public class Editor : Node
         Tree.ReflectGrambyObject(Root);
     }
 
+    // TODO: this is pretty awful isnt it?
+    //       is there any way we could split
+    //       this class up into a few others?
     public override void _Input(InputEvent @event)
     {
         if (@event is InputEventMouseMotion e)
@@ -41,6 +61,7 @@ public class Editor : Node
             {
                 SetDraggedObjectPosition();
             }
+            EligibleForSelection = false;
         }
 
         if (UI.PaletteHover != null && Input.IsActionJustPressed("drag_object"))
@@ -65,6 +86,51 @@ public class Editor : Node
         }
     }
 
+    public override void _UnhandledInput(InputEvent @event)
+    {
+        if (Input.IsActionJustPressed("select"))
+        {
+            EligibleForSelection = true;
+        }
+        else if (Input.IsActionJustReleased("select"))
+        {
+            if (EligibleForSelection)
+            {
+                Godot.Collections.Dictionary results = Raycast(0b0000000000000000000000000000010);
+                GrambyObject grambyObject;
+                try
+                {
+                    var collider = (Area)results["collider"];
+                    grambyObject = collider.GetParent<GrambyObject>();
+                }
+                catch
+                {
+                    grambyObject = null;
+                }
+
+                if (grambyObject != null)
+                {
+                    Selection = new List<GrambyObject> { grambyObject };
+                }
+                else
+                {
+                    Selection = null;
+                }
+            }
+        }
+    }
+
+    private void UpdateSelection(bool selected)
+    {
+        if (_selection != null)
+        {
+            foreach (var selectedObject in _selection)
+            {
+                selectedObject.SetSelected(selected);
+            }
+        }
+    }
+
     private void SetAreaExclusionArray(Node node)
     {
         foreach (Node child in node.GetChildren())
@@ -82,22 +148,13 @@ public class Editor : Node
 
     private void SetDraggedObjectPosition()
     {
-        var from = Camera.ProjectRayOrigin(LastMousePosition);
-        var to = from + Camera.ProjectRayNormal(LastMousePosition) * 1000;
-        var results = SpaceState.IntersectRay(
-            from,
-            to,
-            AreaExclusionArray,
-            0b1111111111111111111111111111111,
-            false,
-            true
-        );
+        Godot.Collections.Dictionary results = Raycast(0b0000000000000000000000000000001);
 
         Attachment attachment;
         try
         {
             var collider = (Area)results["collider"];
-            attachment = (Attachment)collider.GetParent();
+            attachment = collider.GetParent<Attachment>();
         }
         catch
         {
@@ -130,6 +187,21 @@ public class Editor : Node
                 DraggedObject.SetTransform();
             }
         }
+    }
+
+    private Godot.Collections.Dictionary Raycast(uint mask)
+    {
+        var from = Camera.ProjectRayOrigin(LastMousePosition);
+        var to = from + Camera.ProjectRayNormal(LastMousePosition) * 1000;
+        var results = SpaceState.IntersectRay(
+            from,
+            to,
+            AreaExclusionArray,
+            mask,
+            false,
+            true
+        );
+        return results;
     }
 
     private void DisposeDraggedObject()

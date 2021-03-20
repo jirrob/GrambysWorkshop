@@ -10,6 +10,11 @@ public abstract class GrambyObject : Spatial
 
     public Dictionary<string, object> Properties;
 
+    [Export]
+    public NodePath SelectionAudioPath;
+
+    private AudioStreamPlayer3D SelectionAudio;
+
     private NodePath _defaultAttachment;
 
     [Export]
@@ -28,7 +33,9 @@ public abstract class GrambyObject : Spatial
 
     public override void _Ready()
     {
-        DefaultAttachment = DefaultAttachment;
+        SetTransform();
+        InstantiateMaterial();
+        SelectionAudio = GetNode<AudioStreamPlayer3D>(SelectionAudioPath);
     }
 
     public void SetTransform()
@@ -60,4 +67,19 @@ public abstract class GrambyObject : Spatial
         }
         return children;
     }
+
+    public abstract void InstantiateMaterial();
+
+    public void SetSelected(bool selected)
+    {
+        SetSelectedSound(selected);
+        SetSelectedMaterial(selected);
+    }
+
+    protected void SetSelectedSound(bool selected)
+    {
+        SelectionAudio.Playing = selected;
+    }
+
+    protected abstract void SetSelectedMaterial(bool selected);
 }
