@@ -163,7 +163,15 @@ public class Editor : Node
 
         var draggedObjectParent = DraggedObject.GetParent();
 
-        if (attachment == null)
+        bool attachmentValid = attachment != null;
+        if (attachmentValid)
+        {
+            GrambyObject attached = attachment.Attached;
+            attachmentValid = (attached == null || attached == DraggedObject)
+                && attachment.Type == Attachment.AttachmentType.Cup;
+        }
+
+        if (!attachmentValid)
         {
             if (draggedObjectParent != this)
             {
