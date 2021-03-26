@@ -6,6 +6,8 @@ public class UI : Control
 {
     public PackedScene PaletteHover = null;
 
+    public Settings Settings;
+
     private WindowDialog RTGExportWindow;
     private TextEdit RTGExportWindowTextEdit;
     private GridContainer PreviewGridContainer;
@@ -18,6 +20,7 @@ public class UI : Control
         RTGExportWindow = GetNode<WindowDialog>("RTGExport");
         RTGExportWindowTextEdit = GetNode<TextEdit>("RTGExport/TextEdit");
         PreviewGridContainer = GetNode<GridContainer>("MainArea/LeftPanel/Palette/Control/Control/WrappingGridContainer");
+        Settings = GetNode<Settings>("MainArea/RightPanel/Settings");
         Editor = GetParent<Editor>();
         SetupPreviews();
     }

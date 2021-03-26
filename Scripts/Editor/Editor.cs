@@ -43,6 +43,7 @@ public class Editor : Node
         UI = GetNode<UI>("UI");
         Camera = GetViewport().GetCamera();
         SpaceState = Camera.GetWorld().DirectSpaceState;
+        UI.Settings.Connect(nameof(Settings.SettingsChanged), this, nameof(OnSettingsChanged));
         // TODO temporary
         Root = GetNode<GrambyObject>("Part");
         Tree = GetNode<BuildTree>("UI/MainArea/RightPanel/Build/Control/Tree");
@@ -73,6 +74,7 @@ public class Editor : Node
             AddChild(DraggedObject);
             SetDraggedObjectPosition();
             Tree.ReflectGrambyObject(Root);
+            SetAllAttachmentsHidden(Root, false);
         }
         else if (Input.IsActionJustReleased("drag_object"))
         {
@@ -83,6 +85,7 @@ public class Editor : Node
             DraggedObject = null;
             AreaExclusionArray = null;
             Tree.ReflectGrambyObject(Root);
+            SetAllAttachmentsHidden(Root, UI.Settings.HideAttachmentPoints);
         }
     }
 
@@ -118,6 +121,23 @@ public class Editor : Node
                 }
             }
         }
+    }
+
+    private void SetAllAttachmentsHidden(GrambyObject root, bool hidden)
+    {
+        foreach (var pair in root.Children())
+        {
+            pair.Key.Hidden = hidden;
+            if (pair.Value != null)
+            {
+                SetAllAttachmentsHidden(pair.Value, hidden);
+            }
+        }
+    }
+
+    private void OnSettingsChanged()
+    {
+        SetAllAttachmentsHidden(Root, UI.Settings.HideAttachmentPoints);
     }
 
     private void UpdateSelection(bool selected)

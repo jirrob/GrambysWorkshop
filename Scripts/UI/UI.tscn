@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://UI/Theme.tres" type="Theme" id=1]
 [ext_resource path="res://UI/Header.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Scripts/UI/BuildTree.cs" type="Script" id=3]
 [ext_resource path="res://Scripts/UI/UI.cs" type="Script" id=4]
 [ext_resource path="res://Scripts/UI/WrappingGridContainer.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/UI/Settings.cs" type="Script" id=6]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
@@ -231,6 +232,40 @@ size_flags_vertical = 0
 text = "No groups."
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="PanelContainer" parent="MainArea/RightPanel"]
+anchor_left = -2.0
+anchor_top = 0.707
+anchor_bottom = 1.0
+margin_right = -16.0
+margin_bottom = -16.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="MainArea/RightPanel/Settings"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 447.4
+margin_bottom = 258.28
+
+[node name="Label" type="Label" parent="MainArea/RightPanel/Settings/Control"]
+margin_right = 40.0
+margin_bottom = 17.0
+custom_fonts/font = ExtResource( 2 )
+text = "Settings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HideAttachmentPoints" type="CheckBox" parent="MainArea/RightPanel/Settings/Control"]
+anchor_right = 1.0
+margin_top = 42.0
+text = "Hide attachment points when not grabbing object"
 __meta__ = {
 "_edit_use_anchors_": false
 }
