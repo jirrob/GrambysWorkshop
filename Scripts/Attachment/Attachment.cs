@@ -10,8 +10,21 @@ public class Attachment : Spatial
         Ball,
     }
 
+    private AttachmentType _type = AttachmentType.Cup;
+
     [Export]
-    public AttachmentType Type = AttachmentType.Cup;
+    public AttachmentType Type
+    {
+        get => _type;
+        set
+        {
+            _type = value;
+            if (Meshes != null)
+            {
+                Hidden = Type == AttachmentType.Ball;
+            }
+        }
+    }
 
     [Export]
     public string OnlyBall;
@@ -47,10 +60,6 @@ public class Attachment : Spatial
 
     public override void _Ready()
     {
-        if (Type == AttachmentType.Ball) // TODO: put this in a setter
-        {
-            Visible = false;
-        }
         Meshes = new List<VisualInstance>();
         foreach (var child in GetChildren())
         {
