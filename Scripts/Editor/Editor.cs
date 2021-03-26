@@ -37,6 +37,8 @@ public class Editor : Node
     /// Used to determine if a selection can/should be made after letting go of the mouse
     private bool EligibleForSelection;
 
+    private float ProjectPosition = 5.0f;
+
     public override void _Ready()
     {
         OS.WindowBorderless = false;
@@ -213,6 +215,7 @@ public class Editor : Node
                 }
                 attachment.AddChild(DraggedObject);
                 DraggedObject.SetTransform();
+                ProjectPosition = Camera.GlobalTransform.origin.DistanceTo(DraggedObject.GlobalTransform.origin);
             }
         }
     }
@@ -242,6 +245,6 @@ public class Editor : Node
 
     private Vector3 ProjectMousePositionToWorldPosition(Vector2 mousePosition)
     {
-        return Camera.ProjectPosition(mousePosition, 5);
+        return Camera.ProjectPosition(mousePosition, ProjectPosition);
     }
 }
