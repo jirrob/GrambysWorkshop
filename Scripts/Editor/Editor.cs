@@ -93,6 +93,22 @@ public class Editor : Node
 
     public override void _UnhandledInput(InputEvent @event)
     {
+        if (Input.IsActionJustPressed("delete"))
+        {
+            if (Selection != null)
+            {
+                foreach (GrambyObject selected in Selection)
+                {
+                    if (selected != Root)
+                    {
+                        selected.GetParent().RemoveChild(selected);
+                        selected.QueueFree();
+                    }
+                }
+                Selection = null;
+                Tree.ReflectGrambyObject(Root);
+            }
+        }
         if (Input.IsActionJustPressed("select"))
         {
             EligibleForSelection = true;
@@ -115,7 +131,15 @@ public class Editor : Node
 
                 if (grambyObject != null)
                 {
-                    Selection = new List<GrambyObject> { grambyObject };
+                    if (Selection != null && Input.IsActionPressed("multiselect"))
+                    {
+                        Selection.Add(grambyObject);
+                        UpdateSelection(true);
+                    }
+                    else
+                    {
+                        Selection = new List<GrambyObject> { grambyObject };
+                    }
                 }
                 else
                 {
